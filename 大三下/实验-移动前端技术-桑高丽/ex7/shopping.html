@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>shopping</title>
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/detail.css">
+		<link rel="stylesheet" type="text/css" href="./css/shopping.css" />
+	</head>
+	<body>
+		<!-- 头部 -->
+		<div class="header" style="border: none;">
+			<div class="left">
+				<div class="logo">
+					<img src="img/logo_big01.png">
+				</div>
+				<div class="address">
+					<img src="./img/icon-address.png"  id="detail_1">
+					<span class="city">嘉兴市</span>
+				</div>
+				<div class="changecity">
+					<span style="background-color: #FFFFFF;"><font size="" color="black">切换城市</font></span>
+				</div>
+			</div>
+			<div class="right" id="right">
+		
+			</div>
+		</div>
+
+		<!-- 展示详情 -->
+		<div class="show" style="border: none;">
+			<!-- 购物车左边 -->
+			<div class="left" style="border: none;">
+				<!-- 大图 -->
+				<div class="big_ph" id="big_ph" style="border: #3385FF;" >
+					<img src="./img/o_1b001ccdakc9182u1u9v1hctojmbv.jpg" style="width:480px;height:480px">
+				</div>
+				<!-- 小图 -->
+				<div class="little_ph">
+					<ul>
+						<li><img src="./img/o_1b001ccdakc9182u1u9v1hctojmbv.jpg" id="detail_0" onmouseover="img_onmouseover(this,big_ph)" onmouseout="img_onmouseout(this)"></li>
+						<li><img src="./img/o_1b005bp5q1q2n9suuefgi61fsm1fk.jpg" id="detail_2" onmouseover="img_onmouseover(this,big_ph)" onmouseout="img_onmouseout(this)"></li>
+						<li><img src="./img/o_1b23998t3127q1imsiku1med4m28e.jpg" id="detail_3" onmouseover="img_onmouseover(this,big_ph)" onmouseout="img_onmouseout(this)"></li>
+						<li><img src="./img/o_1b39ppateqq7l3g1nimtreas34.jpg" id="detail_4" onmouseover="img_onmouseover(this,big_ph)" onmouseout="img_onmouseout(this)"></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 购物车右边 -->
+			<div class="right">
+				<!-- 名称和价格 -->
+				<div class="name_price">
+					<p style="font-weight: bolder;font-size: 20px;">蛋糕</p>
+					<p style="color: red;margin: 10px 0px;">￥1680</p>
+				</div>
+				<!-- 规格 -->
+				<div class="specifications">
+					<p class="select">选择规格</p>
+					<div class="help">
+						<p class="spec_tea">1盒（下午茶）</p>	
+					</div>							
+				</div>
+				<!-- 数量和加入购物车 -->
+				<div class="buy_count">
+					<span>数量</span>
+					<div class="bc_count">
+						<div class="count_1" id="count_1"></div>
+						<a class="button1 prev1" id="prev1" onclick="onclick_add()"></a>
+						<a class="button2 next1" id="next1" onclick="onclick_lose()"></a>
+					</div>
+					<a href="javascript:void(0)" class="buy_now">立即购买</a>
+					<a href="javascript:void(0)" class="add_shopping_car">加入购物车</a>
+					
+				</div>
+				<!-- 承诺 -->
+				<div class="promise">
+					<span class="promise_t">幸福承诺</span>
+					<div>
+						<ul>
+							<li>就敢退&nbsp;实物不对版，退款不退货！</li>
+							<li>就敢减&nbsp;约定时间！迟到1分钟减1元！</li>
+							<li>就敢送&nbsp;迟到30分钟免费赠送！</li>
+							<li>就敢赠&nbsp;早到或迟到60分钟以上，双倍赠送！</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 头部js -->
+		<script type="text/javascript" src="./js/a.js"></script>
+		<script type="text/javascript" src="./js/shopping.js"></script>
+	</body>
+</html>

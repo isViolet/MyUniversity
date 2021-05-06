@@ -1,0 +1,349 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "微软雅黑";
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+
+
+/* 头部 */
+.header {
+	width: 2043px;
+	height: 100px;
+	border: 3px firebrick solid;
+	font-size: 22px;
+}
+
+.header .left {
+	float: left;
+
+}
+
+.header .left .logo img {
+	width: 300px;
+	height: 72px;
+	margin-top: 10px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.header .left .address {}
+
+.header .left .address img {
+	position: absolute;
+	width: 20px;
+	height: 34px;
+	left: 340px;
+	top: 33px;
+
+}
+
+.header .left .address span {
+	float: inherit;
+	display: inline-block;
+	line-height: 80px;
+	position: absolute;
+	left: 380px;
+	top: 10px;
+}
+
+.header .left .changecity span {
+	float: inherit;
+	display: inline-block;
+	line-height: 50px;
+	position: absolute;
+	left: 460px;
+	top: 26px;
+	background: hotpink;
+	color: white;
+}
+
+.header .right {
+	float: right;
+	width: 900px;
+}
+
+.header .right ul li {
+	position: relative;
+	float: left;
+	list-style: none;
+	width: 150px;
+	height: 100px;
+	line-height: 100px;
+	color: #7D7D7D;
+}
+
+.header .right ul li a {
+	text-decoration: none;
+}
+
+
+/* 下拉列表框 */
+.header .right ul li .dropdown{
+	display: inline-block;
+	position: relative;
+}
+
+.header .right ul li .drop_content{
+	display: none;
+	position: absolute;
+	background-color: white;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	min-width: 160px;
+	padding: 12px 16px;
+	z-index: 10;
+	
+}
+
+.header .right ul li .dropdown:hover .drop_content{
+	display: block;
+}
+
+
+
+/* 中间 */
+
+.center {
+	width: 100%;
+	height: 655px;
+	border: 3px fuchsia solid;
+	background-color: paleturquoise;
+}
+
+ul {
+	list-style: none;
+}
+
+.center .main {
+	width: 100%;
+	/* height: 616px; */
+	margin: 20px auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.center .main .banner {
+	position: relative;
+	width: 100%;
+	height: 616px;
+	overflow: hidden;
+}
+
+.center .main .banner .banner-slide {
+	position: absolute;
+	width: 100%;
+	height: 616px;
+	left: 400px;
+	background-repeat: no-repeat;
+	display: none;
+}
+
+.center .main .banner .slide1 {
+	background-image: url(../img/bg1.jpg);
+}
+
+.center .main .banner .slide2 {
+	background-image: url(../img/bg2.png);
+}
+
+.center .main .banner .slide3 {
+	background-image: url(../img/bg3.png);
+}
+
+.center .main .banner .slide-active {
+	display: block;
+}
+
+.center .main .button {
+	position: absolute;
+	width: 40px;
+	height: 80px;
+	left: 544px;
+	top: 40%;
+	margin-top: -40px;
+	background: url(../img/arrow.png) no-repeat center center;
+}
+
+.center .main .button:hover {
+	background-color: #FF00FF;
+	opacity: 0.2;
+	filter: alpha(opacity=80);
+}
+
+.center .main .prev {
+	transform: rotate(180deg);
+}
+
+.center .main .next {
+	left: auto;
+	right: 500px;
+}
+
+.center .main .dots {
+	position: absolute;
+	right: 440px;
+	bottom: 104px;
+	text-align: right;
+}
+
+.center .main .dots span {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	line-height: 12px;
+	border-radius: 50%;
+	background: rgba(7, 17, 27, 0.45);
+	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8) inset;
+	margin-left: 8px;
+	cursor: pointer;
+}
+
+.center .main .dots .active {
+	box-shadow: 0 0 0 2px rgba(7, 17, 27, 0.4) inset;
+	background: #fff;
+}
+
+.center .kind {
+	width: 1961.6px;
+	height: 700px;
+	border: 3px palevioletred solid;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.center .kind .cake {
+	width: 26%;
+	height: 700px;
+	float: left;
+}
+
+.center .kind .cake1 {
+	background-color: antiquewhite;
+	margin-left: 12%;
+}
+
+.center .kind .cake1 img {
+	margin: 150px 80px 35px 80px;
+	line-height: 300px;
+}
+
+.center .kind .cake2 {
+	background-color: wheat;
+}
+
+.center .kind .cake2 img {
+	width: 301px;
+	height: 205px;
+	margin: 150px 80px 35px 80px;
+	line-height: 300px;
+}
+
+.center .kind .cake3 {
+	background-color: antiquewhite;
+}
+
+.center .kind .cake3 img {
+	width: 361.2px;
+	height: 246px;
+	margin: 125px 50px 20px 50px;
+	line-height: 300px;
+}
+
+.center .kind .cake .afternoontea {
+	width: 300px;
+	border-bottom: 3px solid;
+	padding: 20px;
+	margin-left: 80px;
+}
+
+.center .kind .cake .cacake {
+	border-bottom: 3px solid;
+	padding: 20px 30px;
+	width: 100px;
+	margin-left: 180px;
+}
+
+.center .kind .cake .freehand {
+	border-bottom: 3px solid;
+	padding: 20px;
+	width: 200px;
+	margin-left: 130px;
+}
+
+.center .kind .cake .word {
+	font-weight: 100;
+	padding: 26px;
+}
+
+/* 底部 */
+/* index中的 */
+.footer {
+	width: 2043px;
+	height: 100px;
+	background-color: #3d2d23;
+	margin-top: 703px;
+}
+
+/* 蛋糕，手信，下午茶中的 */
+.footer_o {
+	margin-top: 0px;
+}
+
+.footer .f_left ul li {
+	position: relative;
+	float: left;
+	list-style: none;
+	width: 150px;
+	height: 100px;
+	line-height: 100px;
+	color: #7D7D7D;
+	margin-left: 10px;
+}
+
+
+.footer .f_left ul li a {
+	text-decoration: none;
+	color: white
+}
+
+.footer .f_left ul li .sx {
+	float: right;
+	margin-top: 32px;
+	width: 2px;
+	height: 30px;
+	background: white;
+	margin-right: 40px;
+}
+
+.footer .f_right {
+	float: right;
+	line-height: 100px;
+	margin-right: 80px;
+	font-weight: bold;
+	color: white;
+}
+
+.footer .f_right .img_ph {
+	width: 18px;
+	height: 16px;
+	position: relative;
+	right: -5px;
+	bottom: -10px;
+}
+
+.footer .f_right .img_ph_index {
+	width: 18px;
+	height: 16px;
+	position: relative;
+	right: 5px;
+	bottom: -2px;
+}
