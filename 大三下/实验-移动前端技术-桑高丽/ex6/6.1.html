@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			var i = 0;
+			function changeColor(){
+				i++;
+				if(i % 4 == 0){
+					document.getElementById("bg").style.backgroundColor = "blue";
+					document.getElementById("prompt").innerHTML = "点击有惊喜呦！！";
+				}else if(i % 4 == 1){
+					document.getElementById("bg").style.backgroundColor = "green";
+					document.getElementById("prompt").innerHTML = "再次点击试试！";
+				}
+				else if(i % 4 == 2){
+					document.getElementById("bg").style.backgroundColor = "orange";
+					document.getElementById("prompt").innerHTML = "骗你的！";
+				}else if(i % 4 == 3){
+					document.getElementById("bg").style.backgroundColor = "red";
+					document.getElementById("prompt").innerHTML = "真的没了！！！";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<center>
+			<div id="bg" style="background-color: blue; width: 250px; height: 200px;">
+				<font id="prompt" size="6" color="white" onclick="changeColor()">点击有惊喜呦！！</font>
+			</div>
+		</center>
+		
+	</body>
+</html>

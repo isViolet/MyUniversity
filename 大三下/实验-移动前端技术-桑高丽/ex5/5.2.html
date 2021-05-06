@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>闰年</title>
+</head>
+<body>
+	请输入年份：<input type="text"><br>
+	<input type="button" value="是不是闰年">
+	
+</body>
+<script>
+	//闰年:年份能被400整除或者能被4整除但是不能被100整除
+	var inps = document.querySelectorAll("input");
+	inps[1].onclick = function(){
+		var year = Number(inps[0].value);
+		if((year % 400 == 0)||(year % 4==0 && year % 100 !=0)){
+			alert(year + "是闰年");
+		}else{
+			alert(year + "不是闰年");
+		}
+	}
+</script>
+</html>

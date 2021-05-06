@@ -1,0 +1,16 @@
+footer{
+    width: 100%;
+    margin: 1em auto;
+}
+footer > .footer_me{
+    width: 50%;
+    font-size: 14px;
+    margin: 0px auto;
+    color: #787878;
+}
+footer > p{
+    font-size: 12px;
+    width: 60%;
+    margin: 0px auto;
+    color: #787878;
+}

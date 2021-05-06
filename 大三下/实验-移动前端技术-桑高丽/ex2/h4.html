@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			a:link{color:red;}
+			
+			a:visited{color:black;}
+			
+			a:hover{color:pink;}
+			
+			a:active{color:#ccc;}
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/h4.css"/>
+	</head>
+	<body>
+		<div id="title">
+			<img src="./img/logo.png" width="100" height="100">
+			<span id="">
+				<a href="h.html">主页</a>
+			</span>
+			<span id="">
+				<a href="h2.html" >茶叶分类</a>
+			</span>
+			<span id="">
+				<a href="h3.html">健康饮茶</a>
+			</span>
+			<span id="">
+				<a href="h4.html">用户注册</a>
+			</span>
+		</div>
+		
+		<div id="h4" style="background-image: url(img/bg.png);">
+			<center><font size="5" color="#A78560" style="padding: 10;">会员信息表</font></center>
+			<p>欢迎您申请会员卡，申请过程将不会收取您任何费用。我们承诺保护您的信息安全,不会将它提供给任何第三方。
+			<p>注:<font size="" color="red">*</font>为必填内容;今天是:<script type="text/javascript">
+                     var date = new Date();
+					 var d = "AM";
+						if(date.getHours()>=0&&date.getHours()<12){
+					 　　　　d="上午好"
+					 　　}else if(date.getHours()>=12&&date.getHours()<18){
+					 　　　　d="下午好"
+					 　　}else{
+					 　　　　d="晚上好"
+					 　　}
+                     document.write("今天是：" + date.getFullYear() + "年" + (date.getMonth() + 1) + "月" + date.getDate() + "日" + " 星期" + "日一二三四五六".charAt(date.getDay()) + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + d);
+                   </script></p>
+				   <font size="4" color="#4E77A4" style="text-align: left; margin-left: 10px; font-weight: bold;">账号信息</font>
+				   
+				   <center>
+					   
+					   <table border="0" width="800" cellspacing="0" cellpadding="10" style="border: 1px solid gray; border-radius: 12px; padding: 15px;">
+					   	<tr>
+					   		<td><b>用户名:<font size="" color="red">*</font></b></td>
+					   		<td><input id="name" type="" name="" value="请输入用户名" style="text-align: center;"></td>
+					   	</tr>
+					   	<tr>
+					   		<td><b>密码:<font size="" color="red">*</font></b>
+					   		</td>
+					   		<td><input type="" id="pwd1" name="" value="请输入密码" style="text-align: center;"></td>
+					   	</tr>
+					   	<tr>
+					   		<td><b>确认密码:<font size="" color="red">*</font></b></td>
+					   		<td><input type="" id="pwd2" name="" value="请再次输入密码" style="text-align: center;"></td>
+					   	</tr>
+					   </table>
+				   		
+					</center>
+					
+					<font size="4" color="#4E77A4" style="text-align: left; margin-left: 10px; font-weight: bold;margin-top: 20px;">个人信息</font>
+					
+					<center>
+						<table border="0" width="800" cellspacing="0" cellpadding="10" style="border: 1px solid gray; border-radius: 12px; padding: 15px; ">
+							
+							<tr>
+								<td><b>姓名:<font size="" color="red">*</font></b></td>
+								<td><input type="" id="name2" name="" value="请输入姓名" style="text-align: center;"></td>
+							</tr>
+							<tr>
+								<td>
+									<b>国家:<font size="" color="red">*</font></b>
+								</td>
+								<td><select>
+									<option>中国人民共和国</option>
+									<option>美国</option>
+									<option>英国</option>
+									<option>日本</option>
+								</select></td>
+							</tr>
+							<tr>
+								<td>
+									<b>地区:<font size="" color="red">*</font></b>
+									</td>
+								<td><select>
+									<option>地区A</option>
+									<option>地区B</option>
+								</select></td>
+							</tr>
+							<tr>
+								<td><b>年龄:</b></td>
+								<td><input type="" name="" value="" style="text-align: center;"></td>
+							</tr>
+							<tr>
+								<td><b>性别：</b></td>
+								<td><input type="radio" name="">男孩<input type="radio" name="">女孩</td>
+							</tr>
+							
+							<tr>
+								<td><b>兴趣爱好:</b></td>
+								<td>
+									<input type="checkbox" name="running" checked>书籍
+									<input type="checkbox" name="reading" checked>音乐
+									<input type="checkbox" name="shopping" checked>电影
+									<input type="checkbox" name="shopping" checked>健身
+								</td>
+							</tr>
+						</table>
+					</center>
+					<input style="margin-left: 300px" type="submit" name="" id="btn" value="注册">
+					<input style="margin-left: 50px" type="reset" name="" value="清除">
+					<script>
+						window.onload=function(){
+							var name=document.getElementById("name");
+							var name2=document.getElementById("name2");
+							var pwd1=document.getElementById("pwd1");
+							var pwd2=document.getElementById("pwd2");
+						
+							var btn=document.getElementById("btn")
+							btn.onclick=function(){
+								//判断账号是否为空
+								if(!name.value){
+									alert("用户名不能为空");
+									console.log("asc")
+								}
+								if(!name2.value){
+									alert("姓名不能为空");
+								}
+								if(!pwd1.value){
+									alert("密码不能为空");
+								}
+								if(!pwd2.value){
+									alert("确认密码不能为空");
+								}
+								
+							}
+						}
+					</script>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,59 @@
+* {
+	margin: 0px auto;
+}
+
+div.middle {
+	width: 100%;
+	height: 600px;
+
+
+	margin: 10px;
+	padding: 10px;
+	background-color: blanchedalmond;
+}
+
+div.menu {
+	width: 45%;
+	height: 95%;
+	background-color: #E4393C;
+	/*菜单左浮动*/
+	float: left;
+
+}
+
+div.main {
+	width: 55%;
+	height: 95%;
+	background-color: #bad0ef;
+	/*主题右浮动*/
+	float: right;
+	/*左浮动、右浮动都可以*/
+	float: left;
+
+	background-image: url(../img/bg.png);
+}
+
+div.lu {
+	width: 90%;
+	height: 35%;
+	background-color: #bad0ef;
+	/*主题右浮动*/
+	margin: 5px;
+	padding: 5px;
+	background-image: url(../img/bg.png);
+}
+
+div.ld {
+	width: 90%;
+	height: 65%;
+	background-color: #bad0ef;
+	/*主题右浮动*/
+	margin: 5px;
+	padding: 5px;
+	background-image: url(../img/bg.png);
+}
+
+table {
+	text-align: center;
+
+}

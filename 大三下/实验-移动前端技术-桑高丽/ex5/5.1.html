@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>实战</title>
+<style type="text/css">
+*{
+	margin:0px;
+	padding:0px;//清除默认样式
+}
+img{
+	cursor:pointer;/*定义鼠标的形状，鼠标形状为小手*/
+	border:1px #66FFFF solid;/*给图片设置一个边框*/
+}
+</style>
+<script type="text/javascript">
+//onload的作用是等事件加载完以后才执行此程序
+window.onload=function()
+{
+	//获取事件
+	var img1=document.getElementById("tp");
+	//绑定事件
+	img1.onmousemove=function()
+	{
+		img1.src="img/logo1.png";//事件驱动程序（修改img的src属性，移入为新的照片）
+	};
+	//获取事件
+	var img2=document.getElementById("tp");
+	//绑定事件
+	img2.onmouseout=function()
+	{
+		img2.src="img/logo2.png";//事件驱动程序（修改img的src属性，移除为原照片）
+	};
+};
+</script>
+</head>
+<body>
+<img src="img/logo2.png" id="tp">
+</body>
+</html>

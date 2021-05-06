@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图实现</title>
+	<style type="text/css">
+		.img-slide{
+			display: none;
+		}
+		.img-slide.img1{
+			display: block;
+		}
+		.imgBox{
+			background-color: aliceblue;
+			height: 400px;
+			width: 100%;
+			align-content: center;
+		}
+	</style>
+</head>
+<body>
+<div class="imgBox" onmouseout="start1()">
+    <img class="img-slide img1" src="img/bg1.jpg" alt="1" width="100%">
+    <img class="img-slide img2" src="./img/bg2.png" alt="2" width="100%">
+    <img class="img-slide img3" src="img/bg3.png" alt="3" width="100%">
+</div>
+</body>
+<script type="text/javascript">
+    var index=0;
+	var timer = null;
+    //改变图片
+    function ChangeImg() {
+        index++;
+        var a=document.getElementsByClassName("img-slide");
+        if(index>=a.length) index=0;
+        for(var i=0;i<a.length;i++){
+            a[i].style.display='none';
+        }
+        a[index].style.display='block';
+    }
+    //设置定时器，每隔两秒切换一张图片
+	
+	function start1(){
+		console.log("start");
+		if(timer == null){
+			timer = setInterval(ChangeImg,2000);
+			console.log("create ");
+		}
+	}
+    
+	function pause1(){
+		console.log("pause");
+		clearInterval(timer);
+		timer = null;
+	}
+	
+</script>
+</html>

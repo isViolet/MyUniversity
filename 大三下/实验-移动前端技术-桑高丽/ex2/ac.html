@@ -1,0 +1,37 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<SCRIPT language=JavaScript>
+<!--
+function checkaddform()
+{
+   if(checkspace(document.form1.xingming.value)) {
+	document.form1.xingming.focus();
+    alert("对不起，请填写姓名！");
+	return false;
+  }
+ }
+function checkspace(checkstr) {
+  var str = '';
+  for(i = 0; i < checkstr.length; i++) {
+    str = str + ' ';
+  }
+  return (str == checkstr);
+}
+//-->
+</SCRIPT>
+</head>
+ 
+<body>
+<FORM id=form1 onSubmit="return checkaddform()" method=post name=form1 
+  action=feedbackok.asp>
+  姓名 
+  <INPUT name=xingming>
+  <INPUT value=提交信息 type=submit name=Submit>
+</FORM>
+</body>
+</html>
+

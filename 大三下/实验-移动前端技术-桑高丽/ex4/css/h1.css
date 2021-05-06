@@ -1,0 +1,47 @@
+h1 {
+	background-color: #FFC0CB;
+	padding: 20px;
+}
+
+ul {
+	list-style-type: none;
+	1/删除无序列表的项目符号
+}
+
+.ull li {
+	display: inline;
+	1/横向排序
+}
+
+a {
+	text-decoration: none
+}
+
+a:link {
+	color: black
+}
+
+a:visited {
+	color: black
+}
+
+a:hover {
+	color: black
+}
+
+a:active {
+	color: black
+}
+
+.ttt{
+	background-color: purple;
+	text-align: center;
+	font-size: 28px;
+}
+
+.footer{
+	background-color: gray;
+	text-align: center;
+	font-size: 28px;
+	padding: 10px;
+}
